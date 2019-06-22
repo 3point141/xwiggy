@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: amank
@@ -23,8 +24,17 @@
     <tr>
     </tr>
     <tr>
-        <td><a href="home.jsp">Home</a></td>
+        <td>
+
+        </td>
     </tr>
+    <tr>
+        <td><a href="home.jsp">Home</a></td>
+        <td><a href="menu">Menu</a> </td>
+    </tr>
+
 </table>
+
+
 </body>
 </html>

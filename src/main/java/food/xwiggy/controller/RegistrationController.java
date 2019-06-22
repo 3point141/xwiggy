@@ -30,7 +30,7 @@ public class RegistrationController {
                                 @ModelAttribute("user") User user) {
 
         userService.register(user);
-
+        FoodController foodController = new FoodController();
         return new ModelAndView("welcome", "firstname", user.getFirstname());
     }
 }
