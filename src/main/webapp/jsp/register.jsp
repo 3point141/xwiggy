@@ -14,7 +14,78 @@
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
     <title>Registration</title>
 </head>
+
+<style>
+    body {
+        background: #393939;
+        color: white;
+        font: 14px Helvetica, sans-serif;
+    }
+
+    label {
+        font: bold 20px Helvetica, sans-serif;
+        display: block;
+        float: left;
+        text-align: right;
+        padding: 5px 10px 0 0;
+        width: 140px;
+    }
+    form div {
+        overflow: hidden;
+        margin: 0 0 5px 0;
+    }
+
+    .dec {
+        background-position: 0 -29px;
+    }
+
+    .buttons {
+        padding: 20px 0 0 140px;
+    }
+
+    .bigbutton {
+        border-radius: 4px;
+        background-color: #f4511e;
+        border: none;
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 15px;
+        padding: 20px;
+        width: 120px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+    }
+
+    .bigbutton span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+    }
+
+    .bigbutton span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+    }
+
+    .bigbutton:hover span {
+        padding-right: 25px;
+    }
+
+    .bigbutton:hover span:after {
+        opacity: 1;
+        right: 0;
+    }
+</style>
 <body>
+<br><br><br><br>
+<h1 align="center">WELCOME NEW USER. REGISTER HERE.</h1>
+<br><br><br><br><br><br>
 <form:form id="regForm" modelAttribute="user" action="registerProcess"
            method="post">
 
@@ -52,12 +123,12 @@
 
         <tr>
             <td></td>
-            <td><form:button id="register" name="register">Register</form:button></td>
+            <td><form:button class="bigbutton" id="register" name="register">Register</form:button></td>
         </tr>
         <tr></tr>
         <tr>
             <td></td>
-            <td><a href="home.jsp">Home</a></td>
+            <td><button class="bigbutton"><a href="home.jsp" style="text-decoration: none; color: white;">Home</a></button></td>
         </tr>
     </table>
 </form:form>

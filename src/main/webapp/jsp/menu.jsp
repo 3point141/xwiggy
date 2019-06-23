@@ -13,12 +13,6 @@
 <head>
 
     <style>
-        /*
-	 CSS-Tricks Example
-	 by Chris Coyier
-	 http://css-tricks.com
-*/
-
         body {
             background: #393939;
             color: white;
@@ -117,12 +111,12 @@
 
             <% int count = 0; %>
             <td>
-                <form action="">
+                <form action="" method="post">
                     <div id="page-wrap">
                         <form method="post" action="">
                             <div class="numbers-row">
                                 <%--@declare id="name"--%><label for="name">Current Value</label>
-                                <input type="text" name="partridge" id="partridge" value="0">
+                                <input type="text" name=${items.id} id=${items.id} value="0">
                                     <div class="inc button" style="background:darkblue no-repeat; width: 10px">+</div>
                                     <div class="dec button" style="background: orangered no-repeat; width: 10px">-</div>
                             </div>
@@ -137,9 +131,11 @@
 <table align="center">
     <tr>
         <td>
+            <form action="billingDetails" method="post" modelAttribute="billing">
             <div class="button">
-                <a href="billing.jsp"><button class="bigbutton"><span>Buy Now</span></button></a>
+                <button class="bigbutton" id="billing" name="billing"><span>Buy Now</span></button>
             </div>
+            </form>
         </td>
         <td>
                 <a href="home.jsp"><button class="bigbutton"><span>Log Out</span></button></a>

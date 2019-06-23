@@ -2,25 +2,25 @@ package food.xwiggy.model;
 
 public class Food {
 
-    private int id;
+    private String id;
     private String item;
     private int price;
     private int quantity;
 
     public Food(){}
 
-    public Food(int id, String item, int price,int quantity) {
+    public Food(String id, String item, int price,int quantity) {
         this.id = id;
         this.item = item;
         this.price = price;
         this.quantity=quantity;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 

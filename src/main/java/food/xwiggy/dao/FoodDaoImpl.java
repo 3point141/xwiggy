@@ -22,7 +22,7 @@ public class FoodDaoImpl {
         ResultSet rs = statement.executeQuery("select * from foodcart");
 
         while(rs.next()) {
-            int id = rs.getInt(1);
+            String id = rs.getString(1);
             String item = rs.getString(2);
             int price = rs.getInt(3);
             int quantity=rs.getInt(4);

@@ -1,17 +1,14 @@
 <%--
   Created by IntelliJ IDEA.
   User: amank
-  Date: 6/22/2019
-  Time: 8:54 PM
+  Date: 6/23/2019
+  Time: 8:59 PM
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-         pageEncoding="ISO-8859-1" %>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-    <title>Welcome</title>
+    <title>Billing</title>
     <style>
         body {
             background: #393939;
@@ -58,16 +55,20 @@
             right: 0;
         }
     </style>
+
 </head>
 <body>
-<br><br><br><br>
-<H1 align="center">XWIGGY | A FASTER WAY TO ORDER YOUR FOOD</H1>
-<br><br><br><br><br><br>
+
+<h1>Your Cart Value for Coffee: 1<br> ${billing.getabc()}</h1>
+<h1>Your Cart Value for Cookie: 2<br> ${billing.getbcd()}</h1>
+<h1>Your Cart Value for Cake  : 1<br> ${billing.getdef()}</h1>
+
+<br><br>
+
+<h1>Thank you For Purchasing.</h1>
+<br>
 <table align="center">
-    <tr>
-        <td><a href="login"><button class="bigbutton"><span>Log In</span></button></a></td>
-        <td><a href="register"><button class="bigbutton"><span>Register</span></button></a></td>
-    </tr>
+<a href="home.jsp"><button class="bigbutton"><span>Log Out</span></button></a>
 </table>
 </body>
 </html>
