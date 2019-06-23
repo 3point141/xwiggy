@@ -13,3 +13,10 @@ CREATE TABLE `myusers`.`users`
   `phone`     INT         NULL,
   PRIMARY KEY (`username`)
 );
+
+CREATE TABLE `myusers`.`foodcart` (
+   `id` VARCHAR(45) NOT NULL,
+   `item` VARCHAR(45) NOT NULL,
+   `prince` INT NOT NULL,
+   `quantity` INT NOT NULL,
+   PRIMARY KEY (`id`));
