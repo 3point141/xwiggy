@@ -111,18 +111,17 @@
 
             <% int count = 0; %>
             <td>
-                <form action="" method="post">
                     <div id="page-wrap">
-                        <form method="post" action="">
+                        <form method="post" action="billingDetails" modelattribute="billing" name="billing">
                             <div class="numbers-row">
-                                <%--@declare id="name"--%><label for="name">Current Value</label>
+                                <label name="billing">Current Value</label>
                                 <input type="text" name=${items.id} id=${items.id} value="0">
                                     <div class="inc button" style="background:darkblue no-repeat; width: 10px">+</div>
                                     <div class="dec button" style="background: orangered no-repeat; width: 10px">-</div>
+                                <input type="submit"/>
                             </div>
                         </form>
                     </div>
-            </form>
             </td>
         </tr>
     </c:forEach>
@@ -131,9 +130,9 @@
 <table align="center">
     <tr>
         <td>
-            <form action="billingDetails" method="post" modelAttribute="billing">
+            <form action="billingDetails" method="post" modelAttribute="billing" name="billing">
             <div class="button">
-                <button class="bigbutton" id="billing" name="billing"><span>Buy Now</span></button>
+                <button type="submit" class="bigbutton" id="billing" name="billing"><span>Buy Now</span></button>
             </div>
             </form>
         </td>

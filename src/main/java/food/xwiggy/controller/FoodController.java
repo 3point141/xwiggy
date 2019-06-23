@@ -37,9 +37,6 @@ public class FoodController {
     public ModelAndView postQuantity(HttpServletRequest request, HttpServletResponse response, @ModelAttribute("billing") Quantity quantity){
         Quantity quantity1 = quantity;
         ModelAndView modelAndView = new ModelAndView("billing");
-        modelAndView.addObject("q1",quantity1.getabc());
-        modelAndView.addObject("q2",quantity1.getbcd());
-        modelAndView.addObject("q3",quantity1.getdef());
         return modelAndView;
     }
 

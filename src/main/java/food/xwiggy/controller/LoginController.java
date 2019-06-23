@@ -37,6 +37,9 @@ public class LoginController {
         if (null != user) {
             mav = new ModelAndView("welcome");
             mav.addObject("firstname", user.getFirstname());
+            mav.addObject("lastname",user.getLastname());
+            mav.addObject("mobile",user.getPhone());
+            mav.addObject("email",user.getEmail());
             FoodController foodController = new FoodController();
         } else {
             mav = new ModelAndView("login");
