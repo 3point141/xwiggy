@@ -25,7 +25,8 @@ public class FoodDaoImpl {
             int id = rs.getInt(1);
             String item = rs.getString(2);
             int price = rs.getInt(3);
-            Food f = new Food(id,item,price);
+            int quantity=rs.getInt(4);
+            Food f = new Food(id,item,price,quantity);
             food.add(f);
         }
 

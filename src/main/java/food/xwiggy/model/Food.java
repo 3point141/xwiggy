@@ -5,13 +5,15 @@ public class Food {
     private int id;
     private String item;
     private int price;
+    private int quantity;
 
     public Food(){}
 
-    public Food(int id, String item, int price) {
+    public Food(int id, String item, int price,int quantity) {
         this.id = id;
         this.item = item;
         this.price = price;
+        this.quantity=quantity;
     }
 
     public int getId() {
@@ -38,12 +40,21 @@ public class Food {
         this.price = price;
     }
 
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
+
     @Override
     public String toString() {
         return "Food{" +
                 "id=" + id +
                 ", item='" + item + '\'' +
                 ", price=" + price +
+                ", quantity=" + quantity +
                 '}';
     }
 }
