@@ -53,6 +53,6 @@ public class UserServiceTest {
       assertEquals(5,food1.getQuantity());
   }
 
-  
+
 
 }
